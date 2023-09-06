@@ -360,6 +360,16 @@ public class MS : MonoBehaviour
     {
         int[] result;
 
+        //Woops, accidentally removed this totally usefull and needed part at some point in time before releasing — I toally forgot that and can't remember even now xD
+        //So I added it again ofcourse
+        //Sadly this peace of wonderfull code isn't included in the builds, but atleast it is pushed on GitHub now!
+        int totalWeight = 0;
+        for (int i = 0; i < ew.Count; i++)
+        {
+            totalWeight += ew[i][1];
+        }
+        result = new int[totalWeight];
+
         List<int> llist = new List<int>();
         for (int i = 0; i < ew.Count; i++)
         {
